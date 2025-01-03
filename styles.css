@@ -1,0 +1,54 @@
+.new-post {
+    margin-right: 0;
+    margin-left: 885px;
+}
+.out {
+    color: red;
+}
+.icons {
+    margin-top: 10px;
+}
+#myTabContent {
+    padding-left: 0%;
+}
+.one {
+    padding-left: 0%;
+}
+.one img {
+    width: 430px;
+    height: 430px;
+}
+.one-one {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.one-two {
+    margin-bottom: 6px;
+}
+.one-three {
+    margin-bottom: 6px;
+}
+.two-one {
+    margin-top: 10px;
+}
+.two-one img {
+    width: 700px;
+    height: 700px;
+}
+.cats p {
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.cats strong {
+    font-size: 28px;
+}
+.cats i {
+    font-size: 16px;
+}
+.cats-footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

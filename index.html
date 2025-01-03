@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Instagram feed</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+          <a class="navbar-brand pb-2" href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" width="24" height="24" class="d-inline-block align-text-top mt-1">
+            Instagram
+          </a>
+          <button type="button" class="new-post btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Add the caption of your post here" rows="2"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>&nbsp;&nbsp;<button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="settings btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item out" href="#">Log out</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    <div class="container icons">
+      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells fa-lg"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square fa-lg"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="container one">
+            <div class="row one-one">
+              <div class="col-4"><img src="https://lastfm.freetls.fastly.net/i/u/770x0/21d35f342fb23958a20dab4dad4ed7af.jpg#21d35f342fb23958a20dab4dad4ed7af"></div>
+              <div class="col-4"><img src="https://cdn.inflact.com/media/291845469_1038696946816709_66352106231507029_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.29350-15%2F291845469_1038696946816709_66352106231507029_n.jpg%3Fstp%3Ddst-jpg_e35_p1080x1080_tt6%26_nc_ht%3Dinstagram.falg7-1.fna.fbcdn.net%26_nc_cat%3D105%26_nc_ohc%3DFA7zGWQ9OnwQ7kNvgFxZDOY%26_nc_gid%3Dc6fa6e58642a4dccb7ab4df1eafe8449%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AYDKm7XI_OFikYXtHXZ6qAPR-Ftq0RUx8q8OpJ4UuGZl5g%26oe%3D677CD350%26_nc_sid%3Dd885a2&time=1735851600&key=c06d847b94c9cd14bdf7a68212cdab3b&attempt=1"></div>
+              <div class="col-4"><img src="https://i.pinimg.com/736x/21/5e/6f/215e6f6b5b48d8104733f3ca9dc6ee72.jpg"></div>
+            </div>
+            <div class="row one-two">
+              <div class="col-4"><img src="https://i.pinimg.com/736x/d1/97/ef/d197ef4ac557327997232674519194b3.jpg"></div>
+              <div class="col-4"><img src="https://i.pinimg.com/736x/48/f7/7a/48f77a0f4b26200ac618f06c1bf97400.jpg"></div>
+              <div class="col-4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/7a/ee/82/7aee8209-a778-109f-0a98-bb415bc8e95d/656605142364.jpg/10000x10000bb.jpg"></div>
+            </div>
+            <div class="row one-three">
+              <div class="col-4"><img src="https://i.pinimg.com/736x/a1/55/17/a15517b13e37ffd523d6b33bc86e85d7.jpg"></div>
+              <div class="col-4"><img src="https://lastfm.freetls.fastly.net/i/u/770x0/0f714f8cab695454cd9fd5b5a4c05889.jpg#0f714f8cab695454cd9fd5b5a4c05889"></div>
+              <div class="col-4"><img src="https://i.pinimg.com/736x/ee/12/9f/ee129fa21cd8fcbceafbc3bc05689a3e.jpg"></div>
+            </div>
+          </div>  
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="container d-flex justify-content-center">
+            <div class="card two-one">
+              <div class="card-header cats">
+                <p><strong>My Cats!!</strong><i>12/18</i></p>
+              </div>
+              <img src="https://cdn.inflact.com/media/291845469_1038696946816709_66352106231507029_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.29350-15%2F291845469_1038696946816709_66352106231507029_n.jpg%3Fstp%3Ddst-jpg_e35_p1080x1080_tt6%26_nc_ht%3Dinstagram.falg7-1.fna.fbcdn.net%26_nc_cat%3D105%26_nc_ohc%3DFA7zGWQ9OnwQ7kNvgFxZDOY%26_nc_gid%3Dc6fa6e58642a4dccb7ab4df1eafe8449%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AYDKm7XI_OFikYXtHXZ6qAPR-Ftq0RUx8q8OpJ4UuGZl5g%26oe%3D677CD350%26_nc_sid%3Dd885a2&time=1735851600&key=c06d847b94c9cd14bdf7a68212cdab3b&attempt=1" class="card-img-bottom" alt="...">
+              <div class="cats-footer">
+                <h5>26.985 Likes</h5>
+                <h6>An example of an exelent photo for a instagram feed</h6>
+              </div>
+            </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <div class="card two-one">
+              <div class="card-header cats">
+                <p><strong>My Fav Album!</strong><i>08/27</i></p>
+              </div>
+              <img src="https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/7a/ee/82/7aee8209-a778-109f-0a98-bb415bc8e95d/656605142364.jpg/10000x10000bb.jpg" class="card-img-bottom" alt="...">
+              <div class="cats-footer">
+                <h5>100.000 Likes</h5>
+                <h6>An example of an exelent album for a instagram feed</h6>
+              </div>
+            </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <div class="card two-one">
+              <div class="card-header cats">
+                <p><strong>A Drawing!</strong><i>06/22</i></p>
+              </div>
+              <img src="https://i.pinimg.com/736x/ee/12/9f/ee129fa21cd8fcbceafbc3bc05689a3e.jpg" class="card-img-bottom" alt="...">
+              <div class="cats-footer">
+                <h5>4.261 Likes</h5>
+                <h6>An example of an exelent drawing for a instagram feed</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
